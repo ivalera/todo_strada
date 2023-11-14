@@ -20,7 +20,7 @@ function createTask(name, parentElement){
     taskText.textContent = name;
     var btnTask = document.createElement('button');
     btnTask.id = 'btn-close';
-    btnTask.className = 'btn btn__add';
+    btnTask.className = 'btn btn__close';
     taskBlock.appendChild(taskCheckbox);
     taskBlock.appendChild(taskText);
     taskBlock.appendChild(btnTask);
