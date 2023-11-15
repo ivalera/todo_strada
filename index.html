@@ -6,52 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/normalize.css" rel="stylesheet" type="text/css" />
     <link href="./css/styles.css" rel="stylesheet" type="text/css" />
-    <title>#15 TODO (интерфейс)</title>
+    <title>#17 TODO (логика)</title>
 </head>
 <body>
     <div class="header">
         <h2>Strada</h2>
-        <h3>Модуль 2. День 15.</h3>
+        <h3>Модуль 2. День 17.</h3>
         <div style="width: 100px"></div>
     </div>
     <div class="main">
         <div class="container">
-            <h2 class="theme__title">TODO (интерфейс)</h2>
+            <h2 class="theme__title">TODO (логика)</h2>
             <div class="todo__card">
                 <h1 class="todo__title">Задачи</h1>
                 <h1 class="priority__title">HIGH</h1>
                 <form id="form-high-task" class="todo__block">
-                    <input type="text" id="todo-high-input" class="todo__add" placeholder="добавить важное дело">
-                    <button type="submit" id="btn-add-high" class="btn btn__add">
-                        <img src="img/add-icon.svg" alt="add_icon">
-                    </button>
+                    <input type="text" name="task" id="todo-high-input" class="todo__add" placeholder="добавить важное" required>
+                    <button type="submit" id="btn-add-high" class="btn btn__add"></button>
                 </form>
-                <div class="todo__task">
-                    <input type="checkbox" class="todo__status" checked>
-                    <p>
-                        Сегодня нужно, хорошо отдохнуть. 
-                    </p>
-                    <button id="btn-close" class="btn btn__close"></button>
-                </div> 
-                <div class="todo__task">
-                    <input type="checkbox" class="todo__status">
-                    <p>
-                        Не отставать от темпа, никогда.
-                    </p>
-                    <button id="btn-close" class="btn btn__close"></button>
-                </div>
                 <h1 class="priority__title">LOW</h1>
                 <form id="form-low-task" class="todo__block">
-                    <input type="text" name="text" id="todo-low-input" class="todo__add" placeholder="добавить">
+                    <input type="text" name="task" id="todo-low-input" class="todo__add" placeholder="добавить" required> 
                     <button type="submit" id="btn-add-low" class="btn btn__add"></button>
                 </form>
-                <div class="todo__task">
-                    <input type="checkbox" class="todo__status">
-                    <p>
-                        Сегодня нужно, хорошо пообедать. 
-                    </p>
-                    <button id="btn-close" class="btn btn__close"></button>
-                </div> 
             </div>
         </div>
     </div>
